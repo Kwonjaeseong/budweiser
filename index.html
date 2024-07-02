@@ -4,6 +4,260 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Budweiser</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="inner">
+        <div class="top_nav">
+          <h1 class="logo">
+            <a href="#">
+              <img src="./images/logo.png" alt="" />
+            </a>
+          </h1>
+          <div class="search">
+            <div class="budbeats">
+              <a href="#">
+                <img src="./images/budbeats 1.png" alt="" />
+              </a>
+            </div>
+            <div class="search_box">
+              <img src="./images/search.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom_nav">
+          <nav class="nav_wrap">
+            <ul class="gnb">
+              <li><a href="#">PROJECT</a></li>
+              <li>
+                <a href="#">BUDXBEATS</a>
+                <ul class="sub">
+                  <li><a href="#">BUDXBEATS</a></li>
+                  <li><a href="#">Live</a></li>
+                  <li><a href="#">Artists</a></li>
+                  <li><a href="#">Archive</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">PARTY</a>
+                <ul class="sub">
+                  <li><a href="#">RSVP</a></li>
+                  <li><a href="#">Gellary</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">ABOUT BUDWEISER</a>
+                <ul class="sub">
+                  <li><a href="#">Brand</a></li>
+                  <li><a href="#">Product</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="drop_bg"></div>
+    </header>
+
+    <div class="main">
+      <div class="innerproject">
+        <div class="main_banner">
+          <ul>
+            <li class="right arrow_left">
+              <a
+                style="background-image: url(/images/slide1.png)"
+                class="cursor_cont"
+                href="#"
+                target="_self"
+              >
+                <div class="txt_wrap">
+                  <h2>BudX WORLD TOUR</h2>
+                  <p>
+                    버드와 떠나는 월드 뮤직 페스티벌
+                    <img
+                      src="./images/mo_view2.png"
+                      style="width: 9px; height: 9px"
+                      alt=""
+                    />
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="right arrow_left">
+              <a
+                style="background-image: url(/images/slide2.png)"
+                class="cursor_cont"
+                href="#"
+                target="_self"
+              >
+                <div class="txt_wrap">
+                  <h2 class="navy">
+                    BUDWEISER X
+                    <br class="mo_br" />
+                    thisisneverthat®
+                  </h2>
+                  <p class="navy">
+                    버드와이저와
+                    <br class="mo_br" />
+                    디스이즈네버댓의 만남
+                    <img
+                      src="./images/mo_view3.png"
+                      style="width: 9px; height: 9px"
+                      alt=""
+                    />
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                style="background-image: url(/images/slide3.png)"
+                class="cursor_cont"
+                href="#"
+                target
+              >
+                <div class="txt_wrap">
+                  <h2>BUDWEISER ZERO</h2>
+                  <p>
+                    알코올은 ZERO,
+                    <br class="mo_br" />
+                    존재감은 그대로
+                    <img
+                      src="/images/mo_view2.png"
+                      style="width: 9px; height: 9px"
+                      alt=""
+                    />
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="right arrow_left">
+              <a
+                style="background-image: url(/images/slide4.png)"
+                class="cursor_cont"
+                href="#"
+                target="_self"
+              >
+                <div class="txt_wrap">
+                  <h2>BUDXBEATS</h2>
+                  <p>
+                    창모와 KOR KASH, STREET BABY의
+                    <br class="mo_br" />
+                    'PURE RAGE' 라이브 공개
+                    <img
+                      src="./images/mo_view2.png"
+                      style="width: 9px; height: 9px"
+                      alt=""
+                    />
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                style="background-image: url(/images/slide5.png)"
+                class="cursor_cont"
+                href="#"
+                target="_self"
+              >
+                <div class="txt_wrap">
+                  <h2>BUDWEISER X VERDY</h2>
+                  <p>
+                    버드와이저와 베르디의 만남,
+                    <br class="mo_br" />
+                    그리고 하우스 도산 팝업스토어
+                    <img
+                      src="./images/mo_view2.png"
+                      style="width: 9px; height: 9px"
+                      alt=""
+                    />
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="main_artist">
+        <div class="inner">
+          <div class="title">
+            <h3>BUDXBEATS ARTISTS</h3>
+          </div>
+        </div>
+        <div class="artist_slider">
+          <div class="list-container">
+            <ul class="slider-wrapper clear" id="recommendedPlaylist">
+              <div class="js-marquee-wrapper">
+                <div class="js-marquee">
+                  <li>
+                    <a href="#">
+                      <img src="/images/artist1.png" alt="" />
+                      <div class="name">
+                        <p>조권</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="/images/artist2.png" alt="" />
+                      <div class="name">
+                        <p>HAON</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="/images/artist3.png" alt="" />
+                      <div class="name">
+                        <p>스윙스</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="/images/artist4.png" alt="" />
+                      <div class="name">
+                        <p>봉제인간</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="/images/artist5.png" alt="" />
+                      <div class="name">
+                        <p>창모</p>
+                      </div>
+                    </a>
+                  </li>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        var $outerHeight = $(
+          ".header .bottom_nav .nav_wrap > ul > li .sub"
+        ).outerHeight();
+        $(".header .bottom_nav .nav_wrap > ul").hover(
+          function () {
+            $(".header .drop_bg").css("height", $outerHeight);
+          },
+          function () {
+            $(".header .drop_bg").css("height", "0");
+          }
+        );
+      });
+    </script>
+
+    <script src="/js/main.js"></script>
+  </body>
 </html>
