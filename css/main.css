@@ -262,3 +262,118 @@ img {
   font-size: 36px;
   color: #fff;
 }
+
+/* FOOTER */
+
+.footer {
+  background-color: #0a0541;
+  padding: 65px 0;
+}
+
+.footer .inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer .footer_logo {
+  width: 15%;
+}
+
+.footer .footer_logo img {
+  width: 183px;
+}
+
+img {
+  display: inline-block;
+  border: none;
+  vertical-align: baseline;
+  max-width: 100%;
+}
+
+.footer .ft_policy {
+  width: 40%;
+}
+
+.footer .ft_policy .top {
+  margin-bottom: 40px;
+  padding: 15px 0;
+}
+
+.footer .ft_policy .top span,
+.footer .ft_policy .top span a {
+  font-size: 14px;
+  color: #fff;
+  padding: 0 15px;
+  position: relative;
+}
+
+.footer .ft_policy .top span:first-child,
+.footer .ft_policy .top span:first-child a {
+  padding-left: 0;
+}
+
+.footer .ft_policy p {
+  color: #fff;
+  line-height: 30px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.footer .ft_policy p a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer .ft_policy p span {
+  display: inline-block;
+  color: #fff;
+}
+
+.footer .ft_policy .copy {
+  color: rgb(255, 255, 255, 0.6);
+  font-weight: 300;
+}
+
+.footer .ft_sns {
+  width: 40%;
+}
+
+.footer .ft_sns .con {
+  margin-bottom: 40px;
+}
+
+.footer .ft_sns .con .title {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 600;
+  font-family: "Budweiser", sans-serif;
+}
+
+.footer .ft_sns .con ul {
+  display: flex;
+}
+
+.footer .ft_sns .con ul li {
+  margin-right: 10px;
+}
+
+.footer .ft_sns .con ul li a:last-child {
+  margin-right: 0;
+}
+
+.footer .ft_sns .con ul li a {
+  width: 60px;
+  height: 60px;
+  background-color: rgb(255, 255, 255, 0.1);
+  display: block;
+  position: relative;
+  border-radius: 50%;
+}
+
+.footer .ft_sns .con ul li a img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
