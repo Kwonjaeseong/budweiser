@@ -1,0 +1,139 @@
+.budz_contents {
+  background: #0a0541;
+  padding-bottom: 140px;
+  position: relative;
+  color: #fff;
+  padding: 20px 0 0;
+  min-height: 60vh;
+}
+
+.btn_red {
+  display: none;
+  position: fixed;
+  color: #fff;
+  background: #000;
+  font-size: 20px;
+  bottom: 10px;
+  border: 1px solid rgb(255, 255, 255, 0.5);
+  transform: translateX(-50%);
+  left: 50%;
+  z-index: 10;
+  padding: 13px 0px;
+  border-radius: 6px;
+  width: 30%;
+  text-align: center;
+  transition: background 0.1s linear;
+}
+
+body .project-detailview {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+body .project-detailview .btn_red {
+  background: #db1f26;
+}
+
+body .project-detailview .btn_red {
+  display: inline-block;
+  text-align: center;
+  width: 300px;
+  height: 70px;
+  background: #cb1024;
+  font-size: 25px;
+  font-family: "BudBoldKR", sans-serif;
+  font-weight: normal;
+  line-height: 70px;
+  text-align: center;
+  border: 0;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn_red img.naver {
+  width: 24px;
+  vertical-align: middle;
+  display: inline-block;
+  margin: 0 10px 2px 0;
+}
+
+.budz_logo {
+  background: url(https://www.budweiser.kr/themes/budweiser/images/budz_logo_top.png)
+    center no-repeat;
+  width: 40vw;
+  max-width: 240px;
+  height: 142px;
+  min-height: 142px;
+  background-size: contain;
+  margin: 4vw auto 0;
+}
+
+.budz_logo span {
+  display: block;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+}
+
+.budz_contents .project-detailview.old > h3 {
+  margin-top: 1vw;
+}
+
+.budz_contents .project-detailview.old > h3 span {
+  line-height: 140%;
+  font-size: 48px;
+}
+
+h3 > span > b {
+  font-size: 2em;
+  color: #db1f26;
+  vertical-align: middle;
+  font-style: italic;
+  font-weight: bold;
+  font-family: "budweiserserif", serif;
+  line-height: 120%;
+}
+
+body .project-detailview .txt-box {
+  position: relative;
+  margin: 0 auto;
+}
+
+.budz_contents .project-detailview > .txt-box.tit p {
+  margin: 2px auto 24px;
+}
+
+body .project-detailview > .txt-box p {
+  display: block;
+  font-size: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+.budz_set {
+  margin: 6vw 0 0;
+  text-align: center;
+}
+
+.txt_point {
+  padding-top: 0;
+  padding-bottom: 2vw;
+  width: 52%;
+  margin: 0 auto;
+}
+
+.txt_point ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 4vw auto 0;
+}
+
+.txt_point li {
+  align-items: center;
+  flex-direction: column;
+}
