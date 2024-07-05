@@ -1,0 +1,81 @@
+<header class="header">
+  <div class="inner">
+    <div class="top_nav">
+      <h1 class="logo">
+        <a href="/page/main.html">
+          <img src="/images/main_logo.svg" alt="" />
+        </a>
+      </h1>
+      <div class="search">
+        <div class="budbeats">
+          <a href="#">
+            <div>
+              <img src="/images/budbeats.svg" alt="" />
+              <img src="/images/budbeats.svg" alt="" />
+              <img src="/images/budbeats.svg" alt="" />
+              <img src="/images/budbeats.svg" alt="" />
+              <img src="/images/budbeats.svg" alt="" />
+              <img src="/images/budbeats.svg" alt="" />
+              <img src="/images/budbeats.svg" alt="" />
+              <img src="/images/budbeats.svg" alt="" />
+              <img src="/images/budbeats.svg" alt="" />
+              <img src="/images/budbeats.svg" alt="" />
+            </div>
+          </a>
+        </div>
+        <div class="search_box">
+          <img src="/images/search.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom_nav">
+      <nav class="nav_wrap">
+        <ul class="gnb">
+          <li><a href="/page/project.html">PROJECT</a></li>
+          <li>
+            <a href="#">BUDXBEATS</a>
+            <ul class="sub">
+              <li><a href="#">BUDXBEATS</a></li>
+              <li><a href="#">Live</a></li>
+              <li><a href="#">Artists</a></li>
+              <li><a href="#">Archive</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">PARTY</a>
+            <ul class="sub">
+              <li><a href="#">RSVP</a></li>
+              <li><a href="#">Gellary</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">ABOUT BUDWEISER</a>
+            <ul class="sub">
+              <li><a href="#">Brand</a></li>
+              <li><a href="#">Product</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="drop_bg"></div>
+</header>
+
+<script>
+  //sub bg
+  $(document).ready(function () {
+    var $outerHeight = $(
+      ".header .bottom_nav .nav_wrap > ul > li .sub"
+    ).outerHeight();
+    $(".header .bottom_nav .nav_wrap > ul").hover(
+      function () {
+        $(".header .drop_bg").css("height", $outerHeight);
+      },
+      function () {
+        $(".header .drop_bg").css("height", "0");
+      }
+    );
+  });
+</script>

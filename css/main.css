@@ -26,15 +26,59 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding-top: 16px; */
+  padding-top: 16px;
   position: relative;
   z-index: 101;
+}
+
+.header .top_nav .logo {
+  width: 138px;
 }
 
 .header .top_nav .search {
   display: flex;
   align-items: center;
   gap: 15px;
+}
+
+.header .top_nav .search .budbeats {
+  width: 126px;
+  height: 39px;
+  display: block;
+  border-radius: 20px;
+  border: 1.5px solid #dc0019;
+}
+
+.header .top_nav .search .budbeats a {
+  width: 115px;
+  height: 40px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.header .top_nav .search .budbeats a > div {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 10px;
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    left: 0;
+  }
+  to {
+    left: -1000px;
+  }
+}
+
+.header .top_nav .search .budbeats a > div img {
+  max-width: 100%;
 }
 
 .header .top_nav .search .search_box {
@@ -133,7 +177,58 @@ body {
   width: 100%;
 }
 
+/* main */
+
+.main_banner li a {
+  width: 100%;
+  height: 585px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  font-size: 0;
+  display: block;
+}
+.main_banner li .txt_wrap {
+  position: absolute;
+  top: 80px;
+  left: 80px;
+}
+.main_banner li .txt_wrap h2 {
+  font-size: 80px;
+  color: #fff;
+  font-weight: 600;
+  font-family: "Budweiser", sans-serif;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0, 0.6);
+  line-height: 1.2;
+}
+.main_banner li .txt_wrap p {
+  font-size: 30px;
+  font-family: "Pretendard";
+  color: #fff;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0, 0.6);
+}
+.main_banner li .txt_wrap h2.navy {
+  color: #0a043f;
+  text-shadow: none;
+}
+.main_banner li .txt_wrap p.navy {
+  color: #0a043f;
+  font-weight: 500;
+  font-size: 30px;
+  text-shadow: none;
+  font-family: "Pretendard";
+}
+.main_banner li .txt_wrap p img {
+  display: none;
+}
+
 /* artist */
+
+.main_artist {
+  overflow: hidden;
+  padding: 140px 0;
+}
 
 .main_artist .title {
   display: flex;
@@ -147,6 +242,26 @@ body {
   color: #dc0019;
   margin-right: 30px;
   font-family: "Budweiser", sans-serif;
+}
+
+.artist_slider .list-container ul.slider-wrapper {
+  display: flex;
+  width: 100000px;
+  align-items: center;
+  flex-wrap: nowrap;
+  align-content: center;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.artist_slider .list-container ul.slider-wrapper .js-marquee {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  align-content: center;
+  margin-right: 0px;
+  float: left;
 }
 
 .artist_slider .list-container ul.slider-wrapper li {
@@ -268,6 +383,7 @@ img {
 .footer {
   background-color: #0a0541;
   padding: 65px 0;
+  margin-top: 60px;
 }
 
 .footer .inner {
@@ -281,7 +397,7 @@ img {
 }
 
 .footer .footer_logo img {
-  width: 183px;
+  width: 300px;
 }
 
 img {

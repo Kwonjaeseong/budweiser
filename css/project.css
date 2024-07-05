@@ -1,0 +1,281 @@
+.project_title {
+  text-align: center;
+  padding: 80px 0;
+  color: #0a0541;
+}
+
+.project_title h2 {
+  font-size: 60px;
+  font-weight: 600;
+  font-family: "Budweiser", sans-serif;
+  line-height: 1.3;
+}
+
+.project_title p {
+  font-size: 19px;
+  font-weight: 500;
+  font-family: "Pretendard";
+}
+
+.sub_banner li a {
+  width: 100%;
+  height: 585px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  font-size: 0;
+  display: block;
+}
+.sub_banner li .txt_wrap {
+  position: absolute;
+  top: 80px;
+  left: 80px;
+}
+.sub_banner li .txt_wrap h2 {
+  font-size: 80px;
+  color: #fff;
+  font-weight: 600;
+  font-family: "Budweiser", sans-serif;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0, 0.6);
+  line-height: 1.2;
+}
+.sub_banner li .txt_wrap p {
+  font-size: 30px;
+  font-family: "Pretendard";
+  color: #fff;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0, 0.6);
+}
+.sub_banner li .txt_wrap h2.navy {
+  color: #0a043f;
+  text-shadow: none;
+}
+.sub_banner li .txt_wrap p.navy {
+  color: #0a043f;
+  font-weight: 500;
+  font-size: 30px;
+  text-shadow: none;
+  font-family: "Pretendard";
+}
+.sub_banner li .txt_wrap p img {
+  display: none;
+}
+
+/* btn */
+/* 
+.sub_more_wrap {
+  width: 210px;
+  border: 2px solid #0a0541;
+  border-radius: 35px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.sub_more_btn {
+  width: 210px;
+  text-align: center;
+  margin: 0 auto;
+  height: 70px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  transition: transform 0.33s;
+  transform-style: preserve-3d;
+  position: relative;
+  z-index: 999;
+}
+
+.first_cube {
+  transform: translateZ(30px);
+  transition: all 0.3s;
+}
+
+.second_cube {
+  transform: rotateX(-90deg) translateZ(-40px);
+}
+
+.first_cube,
+.second_cube {
+  height: 70px;
+  width: 100%;
+  position: relative;
+}
+
+.sub_more_btn a {
+  border-radius: 35px;
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #0a0541;
+  font-family: "Budweiser", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  width: 100%;
+  line-height: 70px;
+}
+
+.sub_more_btn a::after {
+  content: "+";
+  font-size: 22px;
+  font-weight: 400;
+  color: #0a0541;
+  display: inline-block;
+  font-family: "Pretendard";
+  margin-left: 5px;
+  transition: all 0.3s;
+  position: relative;
+  top: -2px;
+} */
+
+.sub_more_wrap {
+  width: 210px;
+  border: 2px solid #0a0541;
+  border-radius: 35px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 60px;
+}
+.sub_more_wrap::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 35px;
+  transform: translate(-50%, -50%) scale(0);
+  width: 100%;
+  height: 100%;
+  background-color: #0a0541;
+  transition: all 0.3s;
+  border: 2px solid #0a0541;
+}
+.sub_more_wrap:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+.sub_more_btn {
+  width: 210px;
+  text-align: center;
+  margin: 0 auto;
+  height: 70px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  transition: transform 0.33s; /* Animate the transform properties */
+  transform-style: preserve-3d;
+  position: relative;
+  z-index: 999;
+}
+.sub_more_btn a {
+  border-radius: 35px;
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #0a0541;
+  font-family: "Budweiser", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  width: 100%;
+  line-height: 70px;
+}
+.sub_more_btn a::after {
+  content: "+";
+  font-size: 22px;
+  font-weight: 400;
+  color: #0a0541;
+  display: inline-block;
+  font-family: "Pretendard";
+  margin-left: 5px;
+  transition: all 0.3s;
+  position: relative;
+  top: -2px;
+}
+.first_cube {
+  transition: all 0.3s;
+}
+.first_cube,
+.second_cube {
+  height: 70px;
+  width: 100%;
+  position: relative;
+}
+.first_cube {
+  transform: translateZ(30px);
+}
+.second_cube {
+  transform: rotateX(-90deg) translateZ(-40px);
+}
+.sub_more_wrap:hover .sub_more_btn {
+  transform: rotateX(90deg);
+}
+.sub_more_wrap:hover .sub_more_btn a {
+  color: #fff;
+}
+.sub_more_wrap:hover .sub_more_btn a::after {
+  color: #fff;
+}
+.sub_more_btn:hover .first_cube {
+  opacity: 0;
+}
+.sub_more_wrap.white {
+  border-color: #fff;
+  background-color: #fff;
+}
+.sub_more_wrap.white::after {
+  display: none;
+}
+.sub_more_wrap.white .sub_more_btn a {
+  color: #000;
+}
+.sub_more_wrap.white .sub_more_btn a::after {
+  color: #000;
+}
+.sub_more_wrap.white:hover .sub_more_btn a {
+  color: #000;
+}
+.sub_more_wrap.white:hover .sub_more_btn a::after {
+  color: #000;
+}
+.sub_more_wrap.read {
+  width: 170px;
+  border-color: #dc0019;
+  background-color: #dc0019;
+}
+.sub_more_wrap.read .sub_more_btn {
+  width: 170px;
+  height: 60px;
+}
+.sub_more_wrap.read .sub_more_btn a {
+  color: #fff;
+  line-height: 60px;
+}
+.sub_more_wrap.read .sub_more_btn a::after {
+  display: none;
+}
+.sub_more_wrap.read:hover .sub_more_btn a {
+  color: #fff;
+}
+.sub_more_wrap.read:hover .sub_more_btn a::after {
+  color: #fff;
+}
+.sub_more_wrap.read .sub_more_btn .first_cube,
+.sub_more_wrap.read .sub_more_btn .second_cube {
+  height: 60px;
+}
+.sub_more_wrap.border {
+  width: 260px;
+  margin: 0;
+  border-color: rgb(255, 255, 255, 0.5);
+}
+.sub_more_wrap.border::after {
+  display: none;
+}
+.sub_more_wrap.border .sub_more_btn {
+  width: 260px;
+}
+.sub_more_wrap.border .sub_more_btn a {
+  color: #fff;
+}
+.sub_more_wrap.border .sub_more_btn a::after {
+  display: none;
+}

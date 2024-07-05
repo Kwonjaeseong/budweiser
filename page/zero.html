@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budweiser Zero</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/fonts/font.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="
+https://cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js
+"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header_container"></div>
+
+    <!-- footer -->
+    <div class="footer_container"></div>
+
+    <script>
+      $(function () {
+        $(".header_container").load("../inc/header.html");
+        $(".footer_container").load("../inc/footer.html");
+      });
+    </script>
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>
