@@ -383,7 +383,7 @@ img {
 .footer {
   background-color: #0a0541;
   padding: 65px 0;
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
 
 .footer .inner {
@@ -418,7 +418,7 @@ img {
 
 .footer .ft_policy .top span,
 .footer .ft_policy .top span a {
-  font-size: 14px;
+  font-size: 18px;
   color: #fff;
   padding: 0 15px;
   position: relative;
