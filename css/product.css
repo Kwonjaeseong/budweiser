@@ -88,56 +88,155 @@
   display: inline-block;
   border-radius: 36px;
 }
-@media screen and (max-width: 768px) {
-  .product .pro_sec01 {
-    padding: 80px 0 0;
-    height: 1740px;
-    background: url(/images/product_bg03.jpg) no-repeat;
-  }
-  .product .pro_sec01 .pro_title {
-    padding: 60px 0 60px;
-  }
-  .product .pro_sec01 .pro_title h4 {
-    font-size: 34px;
-  }
-  .product .pro_sec01 .pro_title p {
-    font-size: 18px;
-  }
-  .product .pro_sec01 .pro_content .flex_box .box {
-    width: 100%;
-    margin-right: 0;
-  }
-  .product .pro_sec01 .pro_content .flex_box .box .box_txt h5 {
-    font-size: 26px;
-  }
-  .product .pro_sec01 .pro_content .flex_box .box .box_txt p {
-    font-size: 18px;
-  }
-  .product .pro_sec01 .pro_content .flex_box .box .box_txt > div {
-    font-size: 18px;
-  }
-  .product .pro_sec01 .pro_content .flex_box .box .buy_btn a {
-    padding: 0 50px;
-    line-height: 50px;
-    font-size: 18px;
-  }
-}
 
 /* header white */
-.header.white {
+.header {
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
   background-color: transparent;
 }
-.header.white .bottom_nav .nav_wrap > ul > li > a {
+.header .bottom_nav .nav_wrap > ul > li > a {
   color: #fff;
 }
 .sec_title h2.white,
 .sec_title span.white {
   color: #fff;
 }
-.header.white .top_nav .search .search_box {
+.header .top_nav .search .search_box {
   filter: brightness(0) invert(1);
+}
+
+/* mobile  */
+
+@media screen and (max-width: 768px) {
+  /* header */
+  .header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+  }
+  .header .bottom_nav .nav_wrap > ul > li > a {
+    color: #fff;
+  }
+  .sec_title h2.white,
+  .sec_title span.white {
+    color: #fff;
+  }
+  .header .top_nav .search .search_box {
+    filter: brightness(0) invert(1);
+  }
+
+  .header .top_nav .mo_nav::before {
+    content: "";
+    width: 19px;
+    height: 2px;
+    display: block;
+    background-color: #fff;
+    position: relative;
+    left: 7px;
+    border-radius: 30px;
+    transition: all 0.3s;
+  }
+
+  .header .top_nav .mo_nav span {
+    width: 100%;
+    height: 2px;
+    display: block;
+    margin: 4px 0;
+    border-radius: 20px;
+    background-color: #fff;
+    border-radius: 30px;
+  }
+
+  .header .top_nav .mo_nav::after {
+    content: "";
+    width: 13px;
+    height: 2px;
+    display: block;
+    background-color: #fff;
+    position: relative;
+    left: 13px;
+    border-radius: 30px;
+    transition: all 0.3s;
+  }
+
+  /* main section */
+  .product .pro_sec01 {
+    height: 1740px;
+    padding: 80px 0 0;
+  }
+  .product .pro_sec01 .pro_title {
+    text-align: center;
+    padding: 60px 0 60px;
+  }
+  .product .pro_sec01 .pro_title h4 {
+    font-size: 34px;
+  }
+  .product .pro_sec01 .pro_title p {
+    font-size: 17px;
+    line-height: 1.35;
+    font-family: "Noto Sans KR", sans-serif;
+  }
+  .product .pro_sec01 .pro_content .inner {
+    max-width: 1248px;
+  }
+
+  .product .pro_sec01 .pro_content .flex_box .box {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .product .pro_sec01 .pro_content .flex_box .box .img {
+    position: relative;
+  }
+  .product .pro_sec01 .pro_content .flex_box .box:first-child .img {
+    padding-bottom: 105%;
+  }
+  .product .pro_sec01 .pro_content .flex_box .box:last-child .img {
+    padding-bottom: 86%;
+  }
+  .product .pro_sec01 .pro_content .flex_box .box .img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .product .pro_sec01 .pro_content .flex_box .box .box_txt h5 {
+    font-size: 26px;
+    font-family: "Noto Sans KR", sans-serif;
+  }
+  .product .pro_sec01 .pro_content .flex_box .box .box_txt h5 em {
+    font-family: "Budweiser", sans-serif;
+    font-weight: 600;
+    margin-left: 10px;
+    font-size: 26px;
+  }
+  .product .pro_sec01 .pro_content .flex_box .box .box_txt p {
+    font-size: 18px;
+    font-family: "Noto Sans KR", sans-serif;
+  }
+  .product .pro_sec01 .pro_content .flex_box .box .box_txt > div {
+    font-size: 18px;
+    font-family: "Noto Sans KR", sans-serif;
+  }
+  .product .pro_sec01 .pro_content .flex_box .box .buy_btn a {
+    padding: 0 50px;
+    line-height: 50px;
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #dc0019;
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 36px;
+    font-family: "Noto Sans KR", sans-serif;
+    letter-spacing: -0.5px;
+  }
 }

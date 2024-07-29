@@ -87,6 +87,10 @@ body {
   cursor: pointer;
 }
 
+.header .mo_navbar {
+  display: none;
+}
+
 .header .bottom_nav {
   position: relative;
   z-index: 99;
@@ -492,4 +496,383 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* 모바일 뷰 */
+
+@media screen and (max-width: 768px) {
+  .header .top_nav {
+    padding: 20px 0;
+  }
+
+  .header .top_nav h1 img {
+    max-width: 70%;
+  }
+
+  .header .top_nav .search .budbeats {
+    width: 100px;
+    height: 30px;
+  }
+
+  .header .top_nav .search .budbeats a {
+    width: 90px;
+    height: 40px;
+  }
+
+  .header .top_nav .search .budbeats a > div {
+    top: 40%;
+  }
+
+  /* mobile nav bar */
+  .header .top_nav .mo_nav {
+    display: block;
+    width: 26px;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .header .top_nav .mo_nav::before {
+    content: "";
+    width: 19px;
+    height: 2px;
+    display: block;
+    background-color: #0a0541;
+    position: relative;
+    left: 7px;
+    border-radius: 30px;
+    transition: all 0.3s;
+  }
+
+  .header .top_nav .mo_nav span {
+    width: 100%;
+    height: 2px;
+    display: block;
+    margin: 4px 0;
+    border-radius: 20px;
+    background-color: #0a0541;
+    border-radius: 30px;
+  }
+
+  .header .top_nav .mo_nav::after {
+    content: "";
+    width: 13px;
+    height: 2px;
+    display: block;
+    background-color: #0a0541;
+    position: relative;
+    left: 13px;
+    border-radius: 30px;
+    transition: all 0.3s;
+  }
+
+  .header .top_nav .mo_nav.on::before {
+    width: 100%;
+    left: 0;
+    transform: translateY(4px) rotate(135deg);
+  }
+  .header .top_nav .mo_nav.on::after {
+    width: 100%;
+    left: 0;
+    transform: translateY(0px) rotate(-135deg);
+  }
+  .header .top_nav .mo_nav.on span {
+    display: none;
+  }
+
+  /* mobile nav menu */
+  .header .mo_navbar {
+    display: block; /* 기본적으로 숨김 */
+    position: fixed;
+    top: 79px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border-top: 1px solid #0a0541;
+    padding: 25px 20px;
+    transform: translateX(100%);
+    transition: all 0.3s;
+    z-index: 99999;
+  }
+
+  .header .mo_navbar.on {
+    display: block; /* .on 클래스가 추가될 때 보임 */
+    transform: translateX(0);
+  }
+
+  .mo_navbar .mo_navbarmenu > li {
+    border-bottom: 1px solid #0a0541;
+    position: relative;
+    width: 320px;
+  }
+
+  .mo_navbar .mo_navbarmenu li a {
+    font-family: "Budweiser", sans-serif;
+    font-weight: 600;
+    color: #0a0541;
+  }
+
+  .mo_navbar .mo_navbarmenu > li > a {
+    font-size: 24px;
+    display: inline-block;
+    padding: 15px 0;
+  }
+
+  .mo_navbar .mo_navbarmenu > li .sub_menu {
+    display: none;
+    padding: 0 15px;
+  }
+
+  .mo_navbar .mo_navbarmenu > li .sub_menu li:first-child {
+    padding-top: 0;
+  }
+
+  .mo_navbar .mo_navbarmenu > li .sub_menu li {
+    padding: 10px 0;
+  }
+  .mo_navbar .mo_navbarmenu > li .sub_menu li a {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(10, 5, 65, 0.8);
+  }
+
+  .mo_navbar .mo_navbarmenu > li::after {
+    top: 22px;
+  }
+
+  .mo_navbar .mo_navbarmenu > li::after {
+    content: "+";
+    font-size: 26px;
+    line-height: 26px;
+    font-weight: 900;
+    font-family: "Noto Sans KR", sans-serif;
+    color: #0a0541;
+    position: absolute;
+    right: 0;
+    transform: rotate(0deg);
+    transition: all 0.3s;
+  }
+  .mo_navbar .mo_navbarmenu > li.no-plus::after {
+    content: none;
+  }
+  .header .bottom_nav {
+    display: none;
+  }
+
+  /* main banner */
+
+  .main_banner li {
+    background: #000;
+  }
+
+  .main_banner li a {
+    width: 36ppx;
+    height: 165px;
+    background-position: center right 50%;
+  }
+  .main_banner li .txt_wrap {
+    position: absolute;
+    top: 22px;
+    left: 22px;
+  }
+  .main_banner li .txt_wrap h2 {
+    font-size: 30px;
+    line-height: 1.4;
+  }
+  .main_banner li .txt_wrap p {
+    font-size: 14px;
+    font-family: "Noto Sans KR", sans-serif;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0, 0.6);
+    line-height: 1.4;
+    position: relative;
+  }
+
+  .main_banner li .txt_wrap p .mo_br {
+    display: block;
+  }
+  .main_banner li .txt_wrap h2.navy {
+    font-size: 30px;
+    line-height: 1.4;
+    color: #0a043f;
+    text-shadow: none;
+  }
+  .main_banner li .txt_wrap p.navy {
+    color: #0a043f;
+    font-weight: 500;
+    font-size: 14px;
+    text-shadow: none;
+    font-family: "Noto Sans KR", sans-serif;
+  }
+
+  .main_banner li .txt_wrap p.navy .mo_br {
+    display: block;
+  }
+  .main_banner li .txt_wrap p img {
+    display: none;
+  }
+
+  /* artist */
+
+  .artist_slider .list-container ul.slider-wrapper {
+    display: flex;
+    width: 100000px;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-content: center;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+  }
+
+  .artist_slider .list-container ul.slider-wrapper .js-marquee {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-content: center;
+    margin-right: 0px;
+    float: left;
+  }
+
+  .artist_slider .list-container ul.slider-wrapper li {
+    display: inline-block;
+    margin: 0 2vw;
+  }
+
+  .artist_slider .list-container ul.slider-wrapper li a {
+    display: block;
+    position: relative;
+  }
+
+  .artist_slider .list-container ul.slider-wrapper li img {
+    vertical-align: top;
+  }
+
+  .artist_slider .list-container ul.slider-wrapper li .name {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+  }
+
+  .artist_slider .list-container ul.slider-wrapper li .name p {
+    position: absolute;
+    bottom: 19%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 36px;
+    color: #fff;
+  }
+
+  .main_artist {
+    padding: 60px 0;
+  }
+  .main_artist .title {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 70px;
+  }
+  .main_artist .title h3 {
+    font-size: 32px;
+    margin-right: 15px;
+  }
+
+  .artist_slider .list-container ul.slider-wrapper li {
+    width: 50vw;
+  }
+
+  .artist_slider .list-container ul.slider-wrapper li .mo_name {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #0a0541;
+    padding: 15px 0 0;
+  }
+
+  /* footer */
+  .footer {
+    font-family: "Noto Sans KR", sans-serif;
+    padding: 30px 0 0 0;
+  }
+
+  .footer .footer_logo {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer .footer_logo img {
+    width: 183px;
+  }
+
+  .footer .ft_policy {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .footer .ft_policy .top {
+    margin-bottom: 0px;
+  }
+
+  .footer .ft_policy .top span,
+  .footer .ft_policy .top span a {
+    font-size: 14px;
+    padding: 0 5px;
+    position: relative;
+  }
+
+  .footer .ft_policy .top span:first-child {
+    border-right: 1px solid #666;
+  }
+
+  .footer .ft_policy p {
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: -1px;
+  }
+
+  .footer .ft_policy .copy {
+    font-size: 14px;
+  }
+
+  .footer .ft_sns {
+    width: 100%;
+  }
+
+  .footer .ft_sns .con .title {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .footer .ft_sns .con ul {
+    justify-content: center;
+  }
+
+  .footer .ft_sns .con ul li {
+    margin-right: 10px;
+  }
+
+  .footer .ft_sns .con ul li a:last-child {
+    margin-right: 0;
+  }
+
+  .footer .ft_sns .con ul li a {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer .ft_sns .con ul li a img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }

@@ -24,7 +24,10 @@
           </a>
         </div>
         <div class="search_box">
-          <img src="/images/search.png" alt="" />
+          <img src="/images/search.svg" alt="" />
+        </div>
+        <div class="mo_nav">
+          <span></span>
         </div>
       </div>
     </div>
@@ -61,11 +64,43 @@
     </div>
   </div>
   <div class="drop_bg"></div>
+
+  <!-- mobile nav -->
+  <div class="mo_navbar">
+    <ul class="mo_navbarmenu">
+      <li class="no-plus">
+        <a href="/page/project.html">PROJECT</a>
+      </li>
+      <li>
+        <a href="#">BUDXBEATS</a>
+        <ul class="sub_menu">
+          <li><a href="#">BUDXBEATS</a></li>
+          <li><a href="#">Live</a></li>
+          <li><a href="#">Artists</a></li>
+          <li><a href="#">Archive</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">PARTY</a>
+        <ul class="sub_menu">
+          <li><a href="#">RSVP</a></li>
+          <li><a href="#">Gallery</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">ABOUT BUDWEISER</a>
+        <ul class="sub_menu">
+          <li><a href="#">Brand</a></li>
+          <li><a href="/page/product.html">Product</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
 </header>
 
 <script>
-  //sub bg
   $(document).ready(function () {
+    // Navigation bar outer height 설정
     var $outerHeight = $(
       ".header .bottom_nav .nav_wrap > ul > li .sub"
     ).outerHeight();
@@ -77,5 +112,22 @@
         $(".header .drop_bg").css("height", "0");
       }
     );
+
+    // Mobile navigation bar 설정
+    $(".mo_navbar .mo_navbarmenu > li > a").on("click", function (e) {
+      e.preventDefault(); // 기본 링크 동작 막기
+      $(this).siblings(".sub_menu").slideToggle(200);
+      $(this).parent().siblings().find(".sub_menu").slideUp(200);
+    });
+
+    $(".header .top_nav .mo_nav").on("click", function () {
+      $(this).toggleClass("on");
+      $(".header .mo_navbar").toggleClass("on");
+      if ($(".header .mo_navbar").hasClass("on")) {
+        $("html").css("overflow", "hidden");
+      } else {
+        $("html").css("overflow", "visible");
+      }
+    });
   });
 </script>
