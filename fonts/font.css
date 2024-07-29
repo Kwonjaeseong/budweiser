@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700&display=swap");
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+@import url(https://db.onlinewebfonts.com/c/5edf3ea5ee13a426718c98661045228e?family=Bud+Bold);
 
 @font-face {
   font-family: "Budweiser";
@@ -22,6 +23,21 @@
   font-weight: normal;
   font-style: italic;
   font-display: swap;
+}
+
+@font-face {
+  font-family: "Bud Bold";
+  src: url("https://db.onlinewebfonts.com/t/5edf3ea5ee13a426718c98661045228e.eot");
+  src: url("https://db.onlinewebfonts.com/t/5edf3ea5ee13a426718c98661045228e.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/5edf3ea5ee13a426718c98661045228e.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/5edf3ea5ee13a426718c98661045228e.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/5edf3ea5ee13a426718c98661045228e.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/5edf3ea5ee13a426718c98661045228e.svg#Bud Bold")
+      format("svg");
 }
 
 /* font-family: "Noto Sans KR", sans-serif; */

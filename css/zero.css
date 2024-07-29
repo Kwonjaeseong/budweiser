@@ -1,31 +1,3 @@
-@import url(https://db.onlinewebfonts.com/c/5edf3ea5ee13a426718c98661045228e?family=Bud+Bold);
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
-
-@font-face {
-  font-family: "Noto Sans KR", sans-serif;
-}
-
-@font-face {
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Bud Bold";
-  src: url("https://db.onlinewebfonts.com/t/5edf3ea5ee13a426718c98661045228e.eot");
-  src: url("https://db.onlinewebfonts.com/t/5edf3ea5ee13a426718c98661045228e.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/5edf3ea5ee13a426718c98661045228e.woff2")
-      format("woff2"),
-    url("https://db.onlinewebfonts.com/t/5edf3ea5ee13a426718c98661045228e.woff")
-      format("woff"),
-    url("https://db.onlinewebfonts.com/t/5edf3ea5ee13a426718c98661045228e.ttf")
-      format("truetype"),
-    url("https://db.onlinewebfonts.com/t/5edf3ea5ee13a426718c98661045228e.svg#Bud Bold")
-      format("svg");
-}
-
 .budz_contents {
   background: #0a0541;
   padding-bottom: 140px;
@@ -192,15 +164,16 @@ body .project-detailview > .txt-box p {
   margin: 24px auto 24px;
 }
 
-.budz_contents .txt-box p strong.red {
+.budz_contents .txt-box p .red.mt0 {
   color: #db1f26;
 }
 
-body .project-detailview > .txt-box p strong {
+body .project-detailview > .txt-box p .red.mt0 {
   font-family: "Bud Bold", sans-serif;
   font-size: 28px;
   font-weight: 700;
   line-height: 1.3636363636;
+  text-decoration: none;
 }
 
 .budz_contents .txt-box p.pdw {
@@ -230,14 +203,14 @@ body .project-detailview .txt-box {
   position: relative;
 }
 
-body .project-detailview > .txt-box p strong {
+body .project-detailview > .txt-box p .red.mt0 {
   font-family: "Bud Bold", sans-serif;
   font-size: 28px;
   font-weight: 700;
   line-height: 1.3636363636;
 }
 
-.budz_contents .txt-box p strong {
+.budz_contents .txt-box p .red.mt0 {
   margin: 3vw 0 3vw;
   display: block;
   text-decoration: underline;
@@ -279,48 +252,51 @@ body .project-detailview.store {
   font-weight: bold;
 }
 
-.budz_link.pc_menu a.link02 {
+.budz_link.pc_menu a.link01 {
   background: url(https://www.budweiser.kr/themes/budweiser/images/budz_store02w.png)
     center center no-repeat;
   background-size: auto;
 }
 
-.budz_link.pc_menu a.link04 {
+.budz_link.pc_menu a.link02 {
   background: url(https://www.budweiser.kr/themes/budweiser/images/budz_store04w.png)
     center center no-repeat;
   background-size: auto;
 }
 
 .budz_link.pc_menu a.link03 {
+  background: url(/images/budz_store05w_1.png) center center no-repeat;
+  background-size: auto;
+}
+
+.budz_link.pc_menu a.link04 {
   background: url(https://www.budweiser.kr/themes/budweiser/images/budz_store03w.png)
     center center no-repeat;
   background-size: auto;
 }
 
-.budz_link.pc_menu a.link05 {
-  background: url(/images/budz_store05w_1.png) center center no-repeat;
-  background-size: auto;
-}
-
-.budz_link.pc_menu a.link02:hover {
+.budz_link.pc_menu a.link01:hover {
   background: url("https://www.budweiser.kr/themes/budweiser/images/budz_store02c_hover.png")
     center center no-repeat;
   background-size: auto;
 }
-.budz_link.pc_menu a.link03:hover {
-  background: url("https://www.budweiser.kr/themes/budweiser/images/budz_store03_hover.png")
-    center center no-repeat;
-  background-size: auto;
-}
-.budz_link.pc_menu a.link04:hover {
+.budz_link.pc_menu a.link02:hover {
   background: url("https://www.budweiser.kr/themes/budweiser/images/budz_store04c_hover.png")
     center center no-repeat;
   background-size: auto;
 }
-.budz_link.pc_menu a.link05:hover {
-  background: url("https://www.budweiser.kr/images/budz_store05c_hover_1.png")
+.budz_link.pc_menu a.link03:hover {
+  background: url("/images/budz_store05c_hover_1.png") center center no-repeat;
+  background-size: auto;
+}
+.budz_link.pc_menu a.link04:hover {
+  background: url("https://www.budweiser.kr/themes/budweiser/images/budz_store03_hover.png")
     center center no-repeat;
   background-size: auto;
+}
+
+.budz_link.mo_menu {
+  display: none;
 }
 
 .budz_contents .mov_vertical {
@@ -340,118 +316,244 @@ body .project-detailview.store {
   background: #2a2a2a;
 }
 
-/* FOOTER */
-
-.z_footer {
-  background-color: #0a0541;
-  padding: 270px 0;
-  margin-top: -80px;
+.footer {
+  margin-top: -77px;
 }
 
-.z_footer .inner {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
+@media screen and (max-width: 768px) {
+  .budz_contents {
+    background: #0a0541;
+    padding-bottom: 140px;
+    height: auto;
+    position: relative;
+    color: #fff;
+    padding: 20px 0 0;
+    min-height: 60vh;
+  }
+  body .project-detailview {
+    width: 90%;
+  }
 
-.z_footer .footer_logo {
-  width: 15%;
-}
+  body .project-detailview .btn_red {
+    display: inline-block;
+    letter-spacing: -3px;
+    text-align: center;
+    width: 200px;
+    height: 60px;
+    font-size: 16px;
+    font-family: "Bud Bold KR", sans-serif;
+    font-weight: bold;
+    line-height: 60px;
+  }
 
-.z_footer .footer_logo img {
-  width: 300px;
-}
+  .btn_red img.naver {
+    width: 24px;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0 10px 2px 0;
+  }
 
-img {
-  display: inline-block;
-  border: none;
-  vertical-align: baseline;
-  max-width: 100%;
-}
+  .budz_logo {
+    width: 40vw;
+    height: 20vw;
+    min-height: 20vw;
+    margin-top: 30px;
+  }
 
-.z_footer .ft_policy {
-  width: 40%;
-}
+  .budz_contents .project-detailview.old > h3 {
+    margin-top: 3vw;
+  }
 
-.z_footer .ft_policy .top {
-  margin-bottom: 40px;
-  padding: 15px 0;
-}
+  .budz_contents .project-detailview.old > h3 span {
+    font-family: "Bud Bold";
+    letter-spacing: -2px;
+    font-size: 25px;
+  }
 
-.z_footer .ft_policy .top span,
-.z_footer .ft_policy .top span a {
-  font-size: 14px;
-  color: #fff;
-  padding: 0 15px;
-  position: relative;
-}
+  .budz_contents .project-detailview > .txt-box.tit p {
+    margin: 6px auto 24px;
+    font-size: 14px;
+  }
 
-.z_footer .ft_policy .top span:first-child,
-.z_footer .ft_policy .top span:first-child a {
-  padding-left: 0;
-}
+  body .project-detailview > .txt-box p {
+    display: block;
+    font-size: 20px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: normal;
+    line-height: 1.5;
+  }
 
-.z_footer .ft_policy p {
-  color: #fff;
-  line-height: 30px;
-  font-weight: 300;
-  margin-bottom: 30px;
-}
+  .budz_set {
+    width: 258px;
+    height: 185px;
+    margin: 10vw 0 0;
+    margin-left: 50px;
+  }
 
-.z_footer .ft_policy p a {
-  text-decoration: none;
-  color: #fff;
-}
+  .budz_set img {
+    width: 100%;
+  }
 
-.z_footer .ft_policy p span {
-  display: inline-block;
-  color: #fff;
-}
+  .txt_point {
+    width: 100%;
+  }
 
-.z_footer .ft_policy .copy {
-  color: rgb(255, 255, 255, 0.6);
-  font-weight: 300;
-}
+  .txt_point img {
+    width: 70%;
+  }
 
-.z_footer .ft_sns {
-  width: 40%;
-}
+  .txt_point ul {
+    justify-content: space-around;
+    margin: 5vw auto 0;
+  }
 
-.z_footer .ft_sns .con {
-  margin-bottom: 40px;
-}
+  .txt_point li span:first-child {
+    color: #a3a3a3;
+    padding: 5px 0;
+  }
 
-.z_footer .ft_sns .con .title {
-  font-size: 30px;
-  color: #fff;
-  font-weight: 600;
-  font-family: "Budweiser", sans-serif;
-}
+  .txt_point li span {
+    font-size: 12px;
+  }
 
-.z_footer .ft_sns .con ul {
-  display: flex;
-}
+  .txt_point p {
+    text-align: right;
+    margin: 1vw 0;
+    font-size: 13px;
+  }
 
-.z_footer .ft_sns .con ul li {
-  margin-right: 10px;
-}
+  .project-detailview.old .txt-box p {
+    margin: 24px auto 24px;
+    font-size: 14px;
+  }
 
-.z_footer .ft_sns .con ul li a:last-child {
-  margin-right: 0;
-}
+  .budz_contents .txt-box p .red.mt0 {
+    color: #db1f26;
+  }
 
-.z_footer .ft_sns .con ul li a {
-  width: 60px;
-  height: 60px;
-  background-color: rgb(255, 255, 255, 0.1);
-  display: block;
-  position: relative;
-  border-radius: 50%;
-}
+  body .project-detailview > .txt-box p .red.mt0 {
+    font-family: "Bud Bold", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.3636363636;
+    text-decoration: none;
+  }
 
-.z_footer .ft_sns .con ul li a img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  .budz_tag {
+    display: block;
+    text-align: center;
+  }
+
+  .budz_tag p {
+    font-size: 20px;
+    letter-spacing: -1.2px;
+  }
+
+  .budz_can {
+    width: 108px;
+    height: 262px;
+    text-align: center;
+    margin-left: 130px;
+    margin-top: 30px;
+  }
+
+  body .project-detailview .txt-box {
+    position: relative;
+  }
+
+  body .project-detailview > .txt-box p strong {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: -2px;
+  }
+
+  .budz_contents .txt-box p strong {
+    margin: 3vw 0 3vw;
+    display: block;
+    text-decoration: underline;
+  }
+
+  .budz_link.pc_menu {
+    padding: 0vw 0 80px;
+  }
+
+  .budz_link.pc_menu.twom {
+    display: none;
+  }
+
+  .budz_link.pc_menu a {
+    width: 30%;
+    height: 100px;
+    padding: 0vw 0 140px;
+  }
+
+  .budz_link.pc_menu a span {
+    color: #db1f26;
+    font-size: 16px;
+    display: inline-block;
+    height: 70px;
+    width: 90%;
+    line-height: 70px;
+    border-radius: 10px;
+    margin: 120px 0 0;
+    background-color: #fff;
+  }
+
+  .budz_link.mo_menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .budz_link.mo_menu a {
+    width: 100%;
+    padding: 0 0 0 20%;
+    height: 55px;
+    margin: 0;
+    text-align: left;
+    position: relative;
+    box-sizing: border-box;
+    border-bottom: 1px solid #4d4d4d;
+  }
+
+  .budz_link.mo_menu a span {
+    color: #fff;
+    line-height: 45px;
+    font-size: 15px;
+  }
+
+  .budz_link.mo_menu a img {
+    position: absolute;
+    right: 10px;
+    width: 12px;
+    top: 35%;
+  }
+
+  .budz_link.mo_menu a.link01 {
+    background: url(/images/budz_store02m.png) left center no-repeat;
+    background-size: auto 80%;
+  }
+  .budz_link.mo_menu a.link02 {
+    background: url(/images/budz_store04m.png) left center no-repeat;
+    background-size: auto 80%;
+  }
+  .budz_link.mo_menu a.link03 {
+    background: url(/images/budz_store05m_1.png) left center no-repeat;
+    background-size: auto 80%;
+  }
+  .budz_link.mo_menu a.link04 {
+    background: url(/images/budz_store03m.png) left center no-repeat;
+    background-size: auto 80%;
+  }
+
+  .budz_contents .mov_vertical {
+    position: relative;
+    width: 90%;
+    height: 180px;
+    text-align: center;
+    margin: 4.5vw auto 4vw;
+  }
+
+  .footer {
+    margin-top: -15px;
+  }
 }
