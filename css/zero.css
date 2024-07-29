@@ -32,7 +32,7 @@ body .project-detailview {
   overflow: hidden;
 }
 
-body .project-detailview .btn_red {
+body .project-detailview .btn_red:hover {
   background: #db1f26;
 }
 
@@ -387,7 +387,8 @@ body .project-detailview.store {
     width: 258px;
     height: 185px;
     margin: 10vw 0 0;
-    margin-left: 50px;
+    /* margin-left: 50px; */
+    margin: 0 auto;
   }
 
   .budz_set img {
@@ -442,6 +443,7 @@ body .project-detailview.store {
   .budz_tag {
     display: block;
     text-align: center;
+    margin-bottom: 20px;
   }
 
   .budz_tag p {
@@ -453,8 +455,9 @@ body .project-detailview.store {
     width: 108px;
     height: 262px;
     text-align: center;
-    margin-left: 130px;
+    /* margin-left: 130px; */
     margin-top: 30px;
+    margin: 0 auto;
   }
 
   body .project-detailview .txt-box {
