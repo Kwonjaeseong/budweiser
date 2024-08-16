@@ -150,7 +150,7 @@ https://cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js
               <div class="js-marquee-wrapper">
                 <div class="js-marquee">
                   <li>
-                    <a href="#">
+                    <a href="#x">
                       <img src="/images/artist1.png" alt="" />
                       <div class="name">
                         <p>조권</p>
@@ -159,7 +159,7 @@ https://cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js
                     <div class="mo_name">조권</div>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="#x">
                       <img src="/images/artist2.png" alt="" />
                       <div class="name">
                         <p>HAON</p>
@@ -168,7 +168,7 @@ https://cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js
                     <div class="mo_name">HAON</div>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="#x">
                       <img src="/images/artist3.png" alt="" />
                       <div class="name">
                         <p>스윙스</p>
@@ -177,7 +177,7 @@ https://cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js
                     <div class="mo_name">스윙스</div>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="#x">
                       <img src="/images/artist4.png" alt="" />
                       <div class="name">
                         <p>봉제인간</p>
@@ -186,7 +186,7 @@ https://cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js
                     <div class="mo_name">봉제인간</div>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="#x">
                       <img src="/images/artist5.png" alt="" />
                       <div class="name">
                         <p>창모</p>
@@ -209,6 +209,18 @@ https://cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js
       $(function () {
         $(".header_container").load("../inc/header.html");
         $(".footer_container").load("../inc/footer.html");
+      });
+
+      const redirectUrl = "/page/project.html";
+
+      $("a").on("click", function (event) {
+        // 클릭된 a 태그가 artist_slider 안에 있는 경우는 이벤트 방지
+        if ($(this).closest(".artist_slider").length > 0) {
+          return; // tabslider 안의 a 태그는 동작하지 않도록 함
+        }
+
+        event.preventDefault(); // 기본 링크 클릭 동작 방지
+        window.location.href = redirectUrl; // 지정한 페이지로 이동
       });
     </script>
 

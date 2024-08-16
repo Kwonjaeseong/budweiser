@@ -201,6 +201,13 @@ https://cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js
           else $banner.removeClass("on");
         });
       });
+
+      const redirectUrl = "/page/product.html";
+
+      $("a").on("click", function (event) {
+        event.preventDefault(); // 기본 링크 클릭 동작 방지
+        window.location.href = redirectUrl; // 지정한 페이지로 이동
+      });
     </script>
 
     <script src="/js/main.js"></script>
