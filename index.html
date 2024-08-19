@@ -1,10 +1,37 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Budweiser</title>
-    <meta http-equiv="refresh" content="0; url=../page/main.html" />
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Budweiser</title>
+  <meta http-equiv="refresh" content="0; url=../page/main.html" />
+</head>
+
+<body>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyCsaOFU2voJyKbS8ouKcyM8-vlQ0tEJYZk",
+      authDomain: "budweiser-77simon.firebaseapp.com",
+      projectId: "budweiser-77simon",
+      storageBucket: "budweiser-77simon.appspot.com",
+      messagingSenderId: "120950498921",
+      appId: "1:120950498921:web:1daa30546f059d4423e4f8",
+      measurementId: "G-0ZPFKQXKDJ"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+</body>
+
 </html>

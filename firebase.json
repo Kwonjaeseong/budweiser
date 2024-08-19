@@ -1,16 +1,10 @@
 {
   "hosting": {
-    "public": "budweiser",
+    "public": "./",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destinatuon": "/index.html"
-      }
     ]
   }
 }
